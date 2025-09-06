@@ -1,0 +1,21 @@
+[2025-09-06 14:06:14] Starting pipeline...
+[2025-09-06 14:06:14] Loaded dataset with 31 rows and 6 columns.
+[2025-09-06 14:06:14] Discription of dataset.
+[2025-09-06 14:06:14] Standardizing the data.
+[2025-09-06 14:06:15] Removed duplicate rows.
+[2025-09-06 14:06:15] Any district as 0 bank those are replaced with NaN .
+[2025-09-06 14:06:15] Added new column: total_branches.
+[2025-09-06 14:06:15] Added new column: atm_per_branches.
+[2025-09-06 14:06:15] Added new column: nationalized_share.
+[2025-09-06 14:06:15] Added new column: private_share.
+[2025-09-06 14:06:15] Added new column: rrb_share.
+[2025-09-06 14:06:15] Added new column: cooperative_share.
+[2025-09-06 14:06:15] Generated insights for least branches
+[2025-09-06 14:06:15] Generated insights for low ATMs at districts.
+[2025-09-06 14:06:15] Generated insights for high ATMs at districts.
+[2025-09-06 14:06:15] Generated insights for nationalized bank shares
+[2025-09-06 14:06:15] Generated insights for private bank shares
+[2025-09-06 14:06:15] Generated insights for regional rural bank shares.
+[2025-09-06 14:06:15] Generated insights for Cooperative Bank share:
+
+[2025-09-06 14:07:59] Any district as 0 bank those are replaced with NaN .
