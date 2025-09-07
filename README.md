@@ -9,20 +9,20 @@ The system operates with a clear separation of concerns and a Retrieval-Augmente
   - Ingests raw  data from .csv file.
   - Performs the operation on the .csv file like cleaning, standardization, transformation.
   - Add new columns like 'total_branches', 'atm_per_branch', and 'market shares', for these columns the data will come from 'branch'/'total_branches' for more analysis.
-  - Generates key statistical insights (e.g., districts with least branches, highest ATM coverage).
-    *   Visualizes data and saves it as 'branches_chart.png'.
-    *   Logs all major steps and notable events to a timestamped log file for transparency and reproducibility.
+  - Generates key statistical insights.
+  -Visualizes data and saves it as 'branches_chart.png'.
+  -Any step executed for that log will created with timestamp.
 
-2.vactor.py file for store and retriever of data.
+2.vector.py file for store and retriever of data.
   - Uses the processed .csv file data to create a vector store.
-  - Each row of the .csv file data is converted into a 'Document' with its content embedded using an Ollama-based embedding model (`mxbai-embed-large`).
+  - Each row of the .csv file data is converted into a 'Document' with its content embedded using an Ollama-based embedding model ("mxbai-embed-large").
 
 
 3.main.py:
  - local AI model OllamaLLM is used for understanding prompts and generating of data.
  - We are using model llama3.2:
- - Imported 'ChatPromptTemplate' for structuring the prompt which is given by user.
- - chain contains the data of both prompt and model(llama3.2).
+ 	- Imported 'ChatPromptTemplate' for structuring the prompt which is given by user.
+ 	- chain contains the data of both prompt and model(llama3.2).
 
 
 Agentic Flow:
@@ -58,15 +58,13 @@ Steps for Installation:
         -ollama pull mxbai-embed-large (for embedding model)
         -ollama pull llama3.2 (LLM modelused for Q&A)
        
-
-3.  Create Environment:
+2.  Create Environment:
     -In terminal:
       - python -m venv venv
       - After creating the environment (venv) activate it.
       -.\venv\Scripts\activate
-    
-
-4.  Install Python Libraries:
+        
+3.  Install Python Libraries:
       - pip install pandas
       - pip install matplotlib 
       - pip install tabulate 
